@@ -1,2 +1,5 @@
-# gmapping_with_visited_region
-The GMapping SLAM modified to also inform the region visited by the robot
+# GMapping SLAM with visited region
+
+The GMapping SLAM (see https://openslam-org.github.io/gmapping.html, http://wiki.ros.org/slam_gmapping and https://github.com/ros-perception/slam_gmapping) modified to also inform the region visited by the robot.
+
+TODO
