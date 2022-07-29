@@ -1,0 +1,25 @@
+<!--
+
+-->
+
+<launch>
+
+	<arg name="output_address" default=""/> 
+
+    <node name="slam_gmapping" pkg="gmapping" type="slam_gmapping" args="scan:=rosaria_phi/laser_laserscan">
+
+    	<param name="~maxRange" value="80" />
+    	<param name="~maxUrange" value="5" /> <!-- default 80 -->
+		
+		<param name="~delta" value="0.1" /> <!-- default 0.05 -->
+		<param name="~map_update_interval" value="2" /> <!-- default 5 -->
+
+		<param name="~linearUpdate" value="0.25" /> <!-- default 1 -->
+		<param name="~lstep" value="0.01" /> <!-- default 0.05 -->
+
+		<param name="visited_radius" value="11" />
+		<param name="output_file_address" value="$(arg output_address)" />
+
+	</node>
+
+</launch>
